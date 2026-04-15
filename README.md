@@ -1,10 +1,10 @@
 # 🎬 Advanced Movie Recommender System
 
 ## 🖥️ Application Interface
-![App UI](images/ui.png)
+![App UI](./ui.png)
 
 ## 📊 Sample Output
-![Output](images/output.png)
+![Output](./output.png)
 
 ---
 
