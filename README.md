@@ -50,13 +50,13 @@ Final Score = 0.6 × Content Score + 0.4 × CF Score
 ---
 
 ## 📂 Project Structure
+
 advanced-movie-recommender-system/
 │
 ├── app.py
 ├── movies.pkl
 ├── requirements.txt
 ├── README.md
-└── images/
 ├── ui.png
 └── output.png
 
