@@ -7,80 +7,119 @@
 ## 📸 Demo
 
 ### 🖥️ Application Interface
+
 ![App UI](./ui.png)
 
 ### 📊 Recommendation Output
+
 ![Output](./output.png)
 
 ---
 
 ## 🚀 Project Overview
 
-This project builds a **hybrid movie recommendation system** that leverages both:
+This project builds a **hybrid movie recommendation system** that combines:
 
-- 🎯 **Content-Based Filtering** (movie features)
-- 🤝 **Collaborative Filtering** (user behavior)
+* 🎯 Content-Based Filtering
+* 🤝 Collaborative Filtering
 
-to generate **high-quality, personalized recommendations**.
+to generate **high-quality personalized recommendations**.
 
-Unlike basic recommenders, this system combines multiple techniques into a **single intelligent pipeline**, improving accuracy and real-world usability.
+The system integrates multiple techniques into a **single intelligent pipeline**, improving accuracy and real-world usability.
+
+---
+
+## 🎯 Problem Statement
+
+Traditional recommendation systems rely on a single approach, leading to limited accuracy and personalization.
+
+This project solves that by combining multiple techniques into a hybrid system that produces more reliable recommendations.
+
+---
+
+## 📂 Dataset
+
+The system uses movie metadata such as:
+
+* Genres
+* Movie titles
+* User interaction data
+
+These features help capture both **content similarity** and **user behavior patterns**.
+
+---
+
+## ⚙️ How It Works
+
+1. User selects a movie in the Streamlit UI
+2. Content similarity is computed using TF-IDF
+3. Collaborative similarity is computed using user interaction data
+4. Hybrid score is calculated
+5. Top-N recommended movies are displayed
 
 ---
 
 ## 🧠 Core Idea
 
-Most recommendation systems rely on a single method.
+Final Recommendation Score:
 
-👉 This project solves that limitation by using a **Hybrid Model**:
+👉 **0.6 × Content Score + 0.4 × Collaborative Score**
 
-Final Score = **0.6 × Content Score + 0.4 × Collaborative Score**
-
-✔ Better recommendations  
-✔ More realistic system design  
-✔ Industry-relevant approach  
+✔ Combines strengths of both methods
+✔ Improves recommendation quality
+✔ More realistic system design
 
 ---
 
 ## ⚙️ System Architecture
 
 ### 🔹 Content-Based Filtering
-- Feature extraction from movie metadata (genres)
-- Text vectorization using **TF-IDF**
-- Similarity calculation using **Cosine Similarity**
+
+* TF-IDF vectorization on movie features
+* Cosine similarity computation
 
 ---
 
 ### 🔹 Collaborative Filtering
-- Uses user-movie interaction data
-- Builds similarity between movies/users
-- Captures behavioral patterns
+
+* User-item interaction matrix
+* Behavioral similarity learning
 
 ---
 
-### 🔹 Hybrid Recommendation Engine
-- Combines both models using weighted scoring
-- Handles missing data safely
-- Produces Top-N recommendations
+### 🔹 Hybrid Engine
+
+* Weighted combination of both models
+* Handles missing similarity values
+* Generates Top-N recommendations
 
 ---
 
 ## 🎯 Key Features
 
-✔ Hybrid Recommendation System (Content + Collaborative)  
-✔ Real-time predictions using Streamlit UI  
-✔ Robust handling of missing similarity values  
-✔ Clean and interactive user interface  
-✔ Scalable design for real-world applications  
+✔ Hybrid recommendation system
+✔ Real-time recommendations using Streamlit
+✔ Handles missing data effectively
+✔ Interactive UI
+✔ Scalable architecture
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python  
-- Pandas  
-- NumPy  
-- Scikit-learn  
-- Streamlit  
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* Streamlit
+
+---
+
+## 📊 Results & Output
+
+* Generates Top-N personalized movie recommendations
+* Improves recommendation relevance compared to single-method systems
+* Demonstrates practical hybrid modeling approach
 
 ---
 
@@ -88,40 +127,35 @@ Final Score = **0.6 × Content Score + 0.4 × Collaborative Score**
 
 advanced-movie-recommender-system/
 │
-├── app.py # Streamlit application
-├── movies.pkl # Movie metadata
-├── requirements.txt # Dependencies
-├── README.md # Project documentation
-├── ui.png # UI screenshot
-└── output.png # Output screenshot
+├── app.py
+├── movies.pkl
+├── requirements.txt
+├── README.md
+├── ui.png
+└── output.png
 
 ---
 
 ## 💼 Business Impact
 
-- 🎯 Enhances user engagement through personalization  
-- 📈 Improves recommendation accuracy using hybrid modeling  
-- 💡 Demonstrates real-world ML system design  
-- 🧠 Useful for platforms like Netflix, Amazon, Spotify  
+* 🎯 Improves user engagement
+* 📈 Enhances recommendation quality
+* 💡 Applicable to platforms like Netflix, Amazon, Spotify
+* 🧠 Demonstrates real-world ML system design
 
 ---
 
 ## 🔥 Why This Project Stands Out
 
-✔ Not a basic recommender — uses **Hybrid ML approach**  
-✔ Includes **end-to-end pipeline (data → model → UI)**  
-✔ Built with **real-world thinking, not just theory**  
-✔ Demonstrates both **ML + Product mindset**
+✔ Hybrid ML approach (advanced concept)
+✔ End-to-end pipeline (data → model → UI)
+✔ Combines ML + product thinking
+✔ Practical and industry-relevant
 
 ---
 
 ## 👨‍💻 Author
 
-**MANNETI YESWANTH REDDY**  
-Data Science | Machine Learning | Python  
-
----
-
-## ⭐ Support
-
-If you found this useful, consider giving it a ⭐ on GitHub!
+**Yeshwanth Reddy M**
+🔗 GitHub: https://github.com/manneti-yeswanth
+🔗 LinkedIn: www.linkedin.com/in/manneti-yeswanth-reddy-2758693b6
